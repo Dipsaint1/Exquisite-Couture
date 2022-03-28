@@ -4,23 +4,8 @@ const nav = document.querySelector("nav");
 const footer = document.getElementById("footer");
 const homeImage = document.querySelector(".image");
 const scrollBtn = document.getElementById("onscroll-btn");
-const images = [
-    "./images/Suit 1.jpg",
-    "./images/Suit 2.jpg",
-    "./images/Suit 3.jpg",
-    "./images/Suit 4.jpg",
-    "./images/Suit 5.jpg",
-    "./images/Suit 3.jpg",
-];
 
-document.getElementById("menu").addEventListener("click", () => {
-    menu.classList.toggle("active");
-    nav.classList.toggle("on");
 
-    // setTimeout(() => {
-    //     nav.classList.toggle("on");
-    // }, 500);
-});
 
 function loadFooter(){
     footer.innerHTML = `
@@ -33,47 +18,58 @@ function loadFooter(){
     `;
 }
 
-function loadImages(){
+function startImageTransition(){
+    const images = document.getElementsByClassName("pic");
+
+    // Set opacity of all images to 1
+    for(let i = 0; i < images.length; ++i){
+        images[i].style.opacity = 1;
+    }
+
+    let top = 1;    // get the z-index of the topmost image
+
+    let current = images.length - 1;   
+
+    setInterval(changeImage, 3000);
     
-    // for(let i = 0; i < images.length; i++){
-    //     setTimeout(() => {
-    //         homeImage.innerHTML = `
-    //             <img src="${images[i]}">
-    //         `;
-    //     }, 1000);
-    // }
+    async function changeImage(){
+        let nextImage = (1 + current) % images.length;
+        images[current].style.zIndex = top + 1;
+        images[nextImage].style.zIndex = top;
 
-    // setInterval(() => {
-    //     images.forEach(image => {
-    //         homeImage.innerHTML = `
-    //             <img src="${image}">
-    //         `;
-    //     });
-    // }, 3000);
+        await transition();
+
+        images[current].style.zIndex = top;
+        images[nextImage].style.zIndex = top + 1;
+        top = top + 1;
+        images[current].style.opacity = 1;
+
+        current = nextImage;
+    }
+
+    function transition(){
+        return new Promise((resolve, reject) => {
+            let del = 0.01;
+
+            let id = setInterval(changeOpacity, 10);
 
 
-    // for(const image of images){
-    //     setTimeout(() => {
-    //         homeImage.innerHTML = `
-    //             <img src = "${image}">
-    //         `;
-    //     }, 1000);
-    // }
-
-    images.forEach(image => {
-        
-        setTimeout(() => {
-            // 
-        }, 1000);
-        homeImage.innerHTML = `
-            <img src='${image}'>
-        `;
-    });
+            function changeOpacity(){
+                images[current].style.opacity -= del;
+                if(images[current].style.opacity <= 0){
+                    clearInterval(id);
+                    resolve();
+                }
+            }
+        });
+    }
+    
 }
 
 function loadDOM(){
     loadFooter();
-    loadImages();
+    startImageTransition();
+    
 }
 
 function scrollFunction(){
@@ -95,6 +91,11 @@ function eventListeners(){
 
     window.addEventListener("scroll", () => {
         scrollFunction();
+    });
+
+    menu.addEventListener("click", () => {
+        menu.classList.toggle("active");
+        nav.classList.toggle("on");
     });
 }
 
