@@ -13,7 +13,12 @@ function HeroSection() {
       {/* <video src={video} autoPlay muted loop></video> */}
       <div className="hero-information">
         <h1 className="hero-header">Cutting <br/> <span> & Tailoring</span></h1>
-        <p className="hero-text">Each shirt is cut individually in order to match the pattern of the fabric from yoke to sleeve as well as at the sleeve plackets</p>
+        <div className="hero-text-container">
+          <p className="hero-text">Each shirt is cut individually in order to match the pattern of the fabric from yoke to sleeve as well as at the sleeve plackets</p>
+          <Link to="#" className="hero-text-btn">
+            <Button>View More</Button>
+          </Link>
+        </div>
       </div>
       <div className='hero-footer'>
         <Link to="#"><span> Facebook </span> </Link>

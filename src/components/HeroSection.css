@@ -42,18 +42,26 @@
   margin-left: 20px;
 }
 
-.hero-text{
+.hero-text-container{
   position: absolute;
   top: 35%;
+  display: flex;
+  flex-direction: column;
   width: 25%;
   right: 0;
   margin-right: 3.5%;
   font-family: 'Playfair Display', serif;
-  font-weight: 500;
   color: #fff;
+}
+
+.hero-text{
+  width: 100%;
+  font-weight: 500;
   letter-spacing: 0.04em;
   font-size: 0.95rem;
+  margin-bottom: 5px;
 }
+
 .hero-footer{
   position: absolute;
   bottom: 0;
@@ -80,7 +88,8 @@
     height: 100%;
   }
 
-  .hero-header, .hero-text{
-    /* display: none; */
+  .hero-text-container, .hero-header{
+    display: none;
   }
 }
+
