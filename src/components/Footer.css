@@ -1,0 +1,28 @@
+#footer{
+  background: #121218;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.footer-links{
+  display: flex;
+  padding: 10px 4%;
+}
+.footer-links > a{
+  color: #deb779;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: light;
+  margin: 0 8px;
+}
+
+.footer-copyright{
+  display: block;
+  margin-right: 3%;
+  color: #fff;
+  text-align: end;
+  width: 100%;
+  font-family: 'poppins';
+  font-size: 0.8rem;
+  font-weight: 300;
+}
