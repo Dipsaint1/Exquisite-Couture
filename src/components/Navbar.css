@@ -47,8 +47,19 @@
   text-decoration: none;
   list-style: none;
   color: white;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 1rem;
+  margin: 0 10px;
+}
+
+.nav-links:hover{
+  background: #deb779;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.menu-icon{
+  display: none;
 }
 
 
