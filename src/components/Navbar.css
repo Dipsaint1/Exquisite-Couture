@@ -11,17 +11,17 @@
   align-items: center;
 }
 .logo-container{
-  flex-basis: 25%;
+  flex-basis: 35%;
   margin-left: 4%;
 }
 .navbar-logo{
-  font-family: 'Playfair Display', serif;
-  color: white;
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Monofett', cursive;
+  color: #deb779;
   text-decoration: none;
   display: block;
   font-size: 3rem;
-  letter-spacing: -0.15rem;
-  font-weight: bold;
+  letter-spacing: 0.15rem;
 }
 
 .navbar-logo .fa-leaf{
@@ -35,7 +35,7 @@
   grid-gap: 20px;
   list-style: none;
   text-align: center;
-  flex-basis: 75%;
+  flex-basis: 65%;
   justify-content: end;
   margin-right: 4%;
   text-decoration: none;

@@ -1,0 +1,38 @@
+.hero-container{
+  display: flex;
+  flex-direction: column;
+  height: 84.6vh;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.hero-image{
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  /* height: 84.6vh; */
+  object-fit: cover;
+}
+video{
+  display: none;
+  object-fit: contain;
+  width: 100%;
+  height: 84.6vh;
+  position: fixed;
+  z-index: -1;
+}
+
+
+@media screen and (max-width: 960px){
+  .hero-image{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+  }
+}
