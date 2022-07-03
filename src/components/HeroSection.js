@@ -4,7 +4,6 @@ import './HeroSection.css';
 import Button from "./utils/Button";
 import Carousel from "./carousel/Carousel";
 
-
 function HeroSection() {
   return (
     <div className='hero-section'>
