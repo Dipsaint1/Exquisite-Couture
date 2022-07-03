@@ -1,9 +1,10 @@
 .navbar{
   background: #121218;
   height: 100px;
-  top: 0;
-  position: sticky;
   z-index: 1;
+  width: 100%;
+  transition: ease 1.5s;
+  /* background-color: linear-gradient(to right, 56deg, #deb779 50%, black 50%); */
 }
 .navbar-container{
   height: 100px;
@@ -14,6 +15,7 @@
 .logo-container{
   flex-basis: 35%;
   margin-left: 4%;
+  transition: ease 1.5s;
 }
 .navbar-logo{
   /* font-family: 'Playfair Display', serif; */
@@ -23,6 +25,7 @@
   display: block;
   font-size: 3rem;
   letter-spacing: 0.15rem;
+  transition: ease 1.5s;
 }
 
 .navbar-logo .fa-leaf{
@@ -33,7 +36,7 @@
 .nav-menu{
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-gap: 20px;
+  grid-gap: 1rem;
   list-style: none;
   text-align: center;
   flex-basis: 65%;
@@ -48,12 +51,14 @@
   text-decoration: none;
   list-style: none;
   color: white;
-  font-weight: 300;
   font-size: 1rem;
+  padding: 1rem;
+  font-weight: 400;
+  font-family: "poppins", serif;
 }
 
 .nav-links:hover{
-  background: #deb779;
+  background: #000;
   border-radius: 3px;
 }
 
@@ -94,13 +99,13 @@
     height: 84.8vh;
     overflow: hidden;
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: all 1s ease-in-out;
   }
 
   .nav-menu.active{
     left: 0;
     opacity: 1;
-    transition: all 0.5s ease-in-out;
+    transition: all 1s ease-in-out;
     z-index: 1;
     background: #121218;
     width: 100%;
