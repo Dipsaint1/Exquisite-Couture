@@ -1,30 +1,17 @@
+.hero-section{
+  /* background-image: linear-gradient(to left top, #deb779, #ae8060, #765147, #3c2a2a, #000000); */
+  position: relative;
+  background: #121218;
+}
+
 .hero-container{
   display: flex;
   flex-direction: column;
-  height: 84.8vh;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  object-fit: cover;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
-.hero-image{
-  position: absolute;
-  z-index: -1;
-  width: 100vw;
-  object-fit: cover;
-}
-
-/* video{
-  display: none;
-  object-fit: contain;
-  width: 100%;
-  height: 84.6vh;
-  position: fixed;
-  z-index: -1;
-} */
 
 .hero-header{
   position: absolute;
@@ -34,8 +21,7 @@
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   color: #fff;
-  letter-spacing: 0.1em;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .hero-header > span{
@@ -47,19 +33,29 @@
   top: 35%;
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 35%;
   right: 0;
   margin-right: 3.5%;
-  font-family: 'Playfair Display', serif;
-  color: #fff;
 }
 
 .hero-text{
   width: 100%;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.04em;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: 'poppins', serif;
   margin-bottom: 5px;
+}
+
+.hero-text-btn > .btn{
+  background-color: #121218;
+  color: #fff;
+  outline: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'poppins', serif;
 }
 
 .hero-footer{
@@ -78,17 +74,26 @@
   margin: 0 8px;
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 991px){
+  .hero-header{
+    font-size: 3rem;
+  }
+  .hero-text{
+    font-size: 0.9rem;
+  }
   .hero-footer{
     display: none;
   }
+}
 
-  .hero-image{
-    width: 100%;
-    height: 100%;
+@media screen and (max-width: 768px){
+  .hero-header{
+    font-size: 2.7rem;
   }
+}
 
-  .hero-text-container, .hero-header{
+@media screen and (max-width: 540px){
+  .hero-information, .hero-footer{
     display: none;
   }
 }

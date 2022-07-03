@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import "./Navbar.css";
 
-
 function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(prev => !prev);
@@ -18,6 +17,7 @@ function Navbar() {
     }
 
     window.addEventListener('scroll', navbarScroll);
+
   
     return () => window.removeEventListener('scroll', navbarScroll)
   }, []);
@@ -25,6 +25,7 @@ function Navbar() {
 
   return (
     <>
+      
       <nav style={isScrolled ? {position: 'sticky', top: '0', backgroundImage: 'linear-gradient(to left top, #deb779, #ae8060, #765147, #3c2a2a, #000000)'} : {position: 'relative', backgroundImage: 'linear-gradient(to right bottom, #000000, #3c2a2a, #765147, #ae8060, #deb779)'}} className="navbar">
         <div className="navbar-container container-fluid">
           <div style={isScrolled ? {color: 'black'} : {color: '#deb779'}} className='logo-container'>
@@ -51,6 +52,7 @@ function Navbar() {
           </div>
         </div>
       </nav>
+
     </>
   )
 }

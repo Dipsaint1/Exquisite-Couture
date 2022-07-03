@@ -3,8 +3,8 @@
   height: 100px;
   z-index: 1;
   width: 100%;
-  transition: ease 1.5s;
-  /* background-color: linear-gradient(to right, 56deg, #deb779 50%, black 50%); */
+  top: 0;
+  transition: all ease 2s;
 }
 .navbar-container{
   height: 100px;
@@ -15,7 +15,7 @@
 .logo-container{
   flex-basis: 35%;
   margin-left: 4%;
-  transition: ease 1.5s;
+  transition: all ease 2s;
 }
 .navbar-logo{
   /* font-family: 'Playfair Display', serif; */
@@ -25,7 +25,7 @@
   display: block;
   font-size: 3rem;
   letter-spacing: 0.15rem;
-  transition: ease 1.5s;
+  transition: all ease 2s;
 }
 
 .navbar-logo .fa-leaf{
