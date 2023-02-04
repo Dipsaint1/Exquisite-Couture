@@ -6,12 +6,18 @@
   top: 0;
   transition: all ease 2s;
 }
+
+.scissor{
+  width: 40px;
+  height: 40px;
+}
 .navbar-container{
   height: 100px;
   max-width: 1500px;
   display: flex;
   align-items: center;
 }
+
 .logo-container{
   flex-basis: 35%;
   margin-left: 4%;

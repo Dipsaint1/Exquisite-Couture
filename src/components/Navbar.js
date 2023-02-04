@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import "./Navbar.css";
+import Scissor from '../images/scissors.ico'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -29,6 +30,7 @@ function Navbar() {
       <nav style={isScrolled ? {position: 'sticky', top: '0', backgroundImage: 'linear-gradient(to left top, #deb779, #ae8060, #765147, #3c2a2a, #000000)'} : {position: 'relative', backgroundImage: 'linear-gradient(to right bottom, #000000, #3c2a2a, #765147, #ae8060, #deb779)'}} className="navbar">
         <div className="navbar-container container-fluid">
           <div style={isScrolled ? {color: 'black'} : {color: '#deb779'}} className='logo-container'>
+            <img src={Scissor} alt="" className='scissor' />
             <Link  style={isScrolled ? {color: 'black'} : {color: '#deb779'}} to="/" className="navbar-logo" onClick={closeMobileMenu}> EXQUISITE </Link>
           </div>
           

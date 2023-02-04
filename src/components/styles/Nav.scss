@@ -1,0 +1,45 @@
+
+#header{
+  // color: red;
+  background-color: black;
+
+  // height: 20vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  @media screen and (max-width: 720px){
+    color: white;
+    height: 15vh;
+
+    .logo-container{
+      grid-column: 1 / 12;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .scissor{
+      margin-right: 20px;
+      height: 60px;
+      width: 60px;
+    }
+
+    .header-text{
+      font-size: 28px;
+      text-transform: uppercase;
+      font-family: 'Itim', cursive;
+      // font-family: 'Catamaran', sans-serif;
+    }
+    
+
+  }
+  @media screen and (max-width: 480px){
+    .logo-container{
+      
+      width: 100%;
+
+
+    }
+  }
+  
+}
