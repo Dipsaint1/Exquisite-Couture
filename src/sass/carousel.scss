@@ -18,6 +18,7 @@
     // align-items: center;
     justify-content: center;
     transition: all 2s ease;
+    position: relative;
   }
 
   .slide h2{
@@ -35,7 +36,7 @@
   }
 
   .slide p{
-    letter-spacing: 10px;
+    letter-spacing: 7px;
     font-size: 1.3em;
     font-weight: 300;
     color: #fff;
@@ -46,10 +47,12 @@
   .arrow{
     font-size: 30px;
     position: absolute;
-    top: 70%;
+    bottom: 15%;
     color: lightgrey;
+    color: red;
     padding: 0 15px;
     cursor: pointer;
+    z-index: 999;
   }
 
   .arrow.right{
@@ -59,7 +62,7 @@
   .circles-container{
     display: flex;
     position: absolute;
-    bottom: 35%;
+    bottom: 30%;
     left: 20px;
   }
 
@@ -72,13 +75,14 @@
     margin: 0 5px;
     cursor: pointer;
     display: block;
+    // margin-top: 90px;
   }
 
   .active-circle{
     opacity: 1;
     background-color: #94d3ec;
     display: block;
-    transition: all 2s ease;
+    // transition: all 2s ease;
   }
 }
 

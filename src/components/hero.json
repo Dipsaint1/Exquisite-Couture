@@ -1,30 +1,26 @@
 [
   {
-    "image": "../images/banner1.jpg",
-    "title": "Your Design",
-    "span": "We Deliver",
+    "title": "Your Design, We ",
+    "span": "Deliver",
     "text": "Suit Resizing",
+    "id": 0
+  },
+  {
+    "title": "Discover True ",
+    "span": "Quality",
+    "text": "Custom Tailoring",
     "id": 1
   },
   {
-    "image": "../images/banner2.jpg",
-    "title": "Your Design",
-    "span": "We Deliver",
+    "title": "Your Design, We ",
+    "span": "Deliver",
     "text": "Suit Resizing",
     "id": 2
   },
   {
-    "image": "../images/banner3.jpg",
-    "title": "Your Design",
-    "span": "We Deliver",
-    "text": "Suit Resizing",
+    "title": "Discover True ",
+    "span": "Quality",
+    "text": "Custom Tailoring",
     "id": 3
-  },
-  {
-    "image": "../images/banner4.jpg",
-    "title": "Your Design",
-    "span": "We Deliver",
-    "text": "Suit Resizing",
-    "id": 4
   }
 ]
