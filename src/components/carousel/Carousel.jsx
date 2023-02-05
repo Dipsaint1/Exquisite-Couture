@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "../../sass/carousel.scss";
 import image1 from "../../images/banner1.jpg";
 import image2 from "../../images/banner2.jpg";
@@ -12,13 +12,11 @@ const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [image1, image2, image3, image4];
   
-  // useEffect(() => {
-  //   const slideInterval = setInterval(() => {
-  //     setCurrentSlide(currentSlide => currentSlide < slides.length - 1 ? currentSlide + 1 : 0);
-  //   }, 5000);
+  useEffect(() => {    
+    const slideInterval = setInterval(() => { setCurrentSlide( curr => currentSlide === 3 ? 0 : curr + 1 ) }, 4000);
+    return () => { clearInterval(slideInterval) }
+  }, [currentSlide])
   
-  //   return () => {clearInterval(slideInterval)}
-  // }, []);
 
   const nextSlide = () => { 
     if( currentSlide === 3 ) setCurrentSlide(3);
@@ -46,7 +44,7 @@ const Carousel = () => {
                   background: `-webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(${images[slide.id]})`,
                   backgroundSize: 'cover',
                   backgroundRepeat: 'no-repeat',
-                  transform: currentSlide < 0 ? '0s': `translateX(${-currentSlide * 100}%)`,
+                  transform: currentSlide < 0 ? null: `translateX(${-currentSlide * 100}%)`,
                   transition: 'all 2s ease-out',
                 }}>
                   <h2>{slide.title}<span>{slide.span}</span></h2>
@@ -56,24 +54,6 @@ const Carousel = () => {
           })
         }
       </div>
-      {/* <div className="slide-wrapper">
-        {
-          slides.map((slide) => {
-            console.log(slide.image);
-            return(
-              <div key={slide.id} className="slide" style={
-                { 
-                  background: `-webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(${slide.image}) no-repeat`,
-                  backgroundSize: 'cover',
-                  transition: 'all 2s ease-in-out'
-                }}>
-                  <h2>{slide.title}<span>{slide.span}</span></h2>
-                  <p>{slide.text}</p>
-              </div>
-            );
-          })
-        }
-      </div> */}
       <div className="circles-container">
         <span onClick={() => setCurrentSlide(0)} className={currentSlide===0 ? 'circle active-circle' : 'circle'}></span>
         <span onClick={() => setCurrentSlide(1)} className={currentSlide===1 ? 'circle active-circle' : 'circle'}></span>
