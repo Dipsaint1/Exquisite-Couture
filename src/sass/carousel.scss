@@ -1,6 +1,7 @@
 #carousel{
   display: block;
   overflow-x: hidden;
+  position: relative;
 
   .slide-wrapper{
     display: flex;
@@ -23,7 +24,7 @@
 
   .slide h2{
     color: white;
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: 300;
     letter-spacing: 3px;
     font-family: 'Work Sans', sans-serif;
@@ -35,10 +36,10 @@
   }
 
   .slide p{
-    letter-spacing: 7px;
-    font-size: 1.3em;
+    letter-spacing: 10px;
+    font-size: 1.2em;
     font-weight: 300;
-    color: #fff;
+    color: #c5c5c5;
     margin: 1em 0 2em 0;
     font-family: 'Work Sans', sans-serif;
   }
