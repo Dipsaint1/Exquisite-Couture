@@ -1,0 +1,30 @@
+[
+  {
+    "image": "../images/banner1.jpg",
+    "title": "Your Design",
+    "span": "We Deliver",
+    "text": "Suit Resizing",
+    "id": 1
+  },
+  {
+    "image": "../images/banner2.jpg",
+    "title": "Your Design",
+    "span": "We Deliver",
+    "text": "Suit Resizing",
+    "id": 2
+  },
+  {
+    "image": "../images/banner3.jpg",
+    "title": "Your Design",
+    "span": "We Deliver",
+    "text": "Suit Resizing",
+    "id": 3
+  },
+  {
+    "image": "../images/banner4.jpg",
+    "title": "Your Design",
+    "span": "We Deliver",
+    "text": "Suit Resizing",
+    "id": 4
+  }
+]
