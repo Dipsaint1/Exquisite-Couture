@@ -1,23 +1,18 @@
-import { createContext, useContext, useReducer, useState } from "react";
-
+import { createContext, useContext, useReducer } from "react";
 
 const DataContext = createContext();
+const initialState = { activeLink: 'home' }
 
-const initialState = { activeLink: 'contact' }
-
-const reducer = (state, action) => {
+const dataReducer = (state, action) => {
   if(action.type === 'SET_ACTIVE_LINK'){
     return{ ...state, activeLink: action.payload };
   }
 }
 
 export const DataContextProvider = ({ children }) => {
-  const [data, dispatch] = useReducer(reducer, initialState);
+  const [data, dispatch] = useReducer(dataReducer, initialState);
 
-  const value = {
-    data, dispatch
-    // activeLink, setActiveLink
-  }
+  const value = { data, dispatch }
 
   return(
     <DataContext.Provider value={ value }>

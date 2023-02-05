@@ -6,7 +6,7 @@ import './styles/Nav.scss';
 
 const Navbar = () => {
   const { data, dispatch } = useDataContext();
-  console.log(data.activeLink);
+  const { activeLink } = data;
 
   return (
       <header id="header">
@@ -23,12 +23,11 @@ const Navbar = () => {
         </div>
         <nav>
           <ul>
-            <li><Link to='' className="nav-item">Home</Link></li>
-            <li><Link to='' className="nav-item">About</Link></li>
-            <li><Link to='' className="nav-item">Services</Link></li>
-            <li><Link to='' className="nav-item">Portfolio</Link></li>
-            <li><Link to='' className="nav-item">Contact</Link></li>
-            <li><p onClick={() => dispatch({ type: 'SET_ACTIVE_LINK', payload: 'about'})}>Test</p></li>
+            <li><Link onClick={() => dispatch({ type: 'SET_ACTIVE_LINK', payload: 'home'})} to='' className={activeLink === 'home' ? 'nav-item active' : 'nav-item'}>Home</Link></li>
+            <li><Link onClick={() => dispatch({ type: 'SET_ACTIVE_LINK', payload: 'about'})} to='' className={activeLink === 'about' ? 'nav-item active' : 'nav-item'}>About</Link></li>
+            <li><Link onClick={() => dispatch({ type: 'SET_ACTIVE_LINK', payload: 'services'})} to='' className={activeLink === 'services' ? 'nav-item active' : 'nav-item'}>Services</Link></li>
+            <li><Link onClick={() => dispatch({ type: 'SET_ACTIVE_LINK', payload: 'portfolio'})} to='' className={activeLink === 'portfolio' ? 'nav-item active' : 'nav-item'}>Portfolio</Link></li>
+            <li><Link onClick={() => dispatch({ type: 'SET_ACTIVE_LINK', payload: 'contact'})} to='' className={activeLink === 'contact' ? 'nav-item active' : 'nav-item'}>Contact</Link></li>
           </ul>
         </nav>
       </header>
