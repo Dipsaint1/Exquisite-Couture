@@ -7,6 +7,9 @@ const dataReducer = (state, action) => {
   if(action.type === 'SET_ACTIVE_LINK'){
     return{ ...state, activeLink: action.payload };
   }
+  // if(action.type === 'TOGGLE_MENU'){
+  //   return{ ...state, toggleMenu: true }
+  // }
 }
 
 export const DataContextProvider = ({ children }) => {
@@ -18,7 +21,7 @@ export const DataContextProvider = ({ children }) => {
     <DataContext.Provider value={ value }>
       { children }
     </DataContext.Provider>
-  )
+  );
 }
 
 export const useDataContext = () => {

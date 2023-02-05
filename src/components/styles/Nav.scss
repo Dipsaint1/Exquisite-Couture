@@ -2,44 +2,43 @@
 #header{
   background-color: black;
   display: flex;
-  grid-template-columns: repeat(1, 1fr);
   padding: 10px 0;
+  // flex-direction: column;
   
-
   @media screen and (max-width: 720px){
     color: white;
-    min-height: 18vh;
+    min-height: 5vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
+    justify-content: center;
+    padding: 20px 30px;
 
     .logo-container{
       display: flex;
       align-items: center;
-      justify-content: center;
     }
 
     .scissor{
       margin-right: 20px;
-      height:  50px;
-      width: 50px;
+      height:  40px;
+      width: 40px;
     }
 
     .header-text{
-      font-size: 32px;
+      font-size: 26px;
       margin: auto 0;
       text-transform: uppercase;
-      font-family: 'Catamaran', sans-serif;
+      font-family: 'Work Sans', sans-serif;
     }
 
     .menu-bars-container{
-      margin:  0;
+      margin-left:  auto;
+      position: relative;
     }
 
     .menu-bars{
-      width: 50px;
-      height: 50px;
+      width: 45px;
+      height: 35px;
       background-color: #0accff;
       display: flex;
       flex-direction: column;
@@ -47,9 +46,9 @@
       align-items: center;
     }
 
-    .bars{
-      width: 28px;
-      height: 3px;
+    .bar{
+      width: 25px;
+      height: 2px;
       background-color: white;
       margin: 4px 0;
     }
@@ -57,8 +56,9 @@
     nav{
       display: flex; 
       margin-top: 10px;
+      transition: all 0.3s ease-in-out;
     }
-
+    
     nav > ul{
       display: flex;
       flex-direction: column;
@@ -86,18 +86,24 @@
       color: #ffb900;;
     }
 
+    .top-bar{
+      transform: rotate(45deg);
+      position: absolute;
+    }
+
+    .middle-bar{
+      display: none;
+    }
+
+    .bottom-bar{
+      transform: rotate(-45deg);
+      position: absolute;
+    }
+
   }
 
   @media screen and (max-width: 360px){
-    .scissor{
-      height: 30px;
-      width: 30px;
-    }
-
-    .header-text{
-      font-size: 22px;
-      font-family: 'Catamaran', sans-serif;
-    }
+    
   }
   
 
