@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import Scissor from '../images/scissors.ico';
 import './styles/Nav.scss'
 
-
-
 const Navbar = () => {
   return (
       <header id="header">
