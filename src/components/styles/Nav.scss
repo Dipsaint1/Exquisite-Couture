@@ -1,16 +1,20 @@
 
 #header{
   background-color: black;
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(1, 1fr);
+  padding: 10px 0;
   
 
   @media screen and (max-width: 720px){
     color: white;
-    height: 17vh;
+    min-height: 18vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
 
     .logo-container{
-      grid-column: 1 / 12;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -18,43 +22,81 @@
 
     .scissor{
       margin-right: 20px;
-      height: 60px;
-      width: 60px;
+      height:  50px;
+      width: 50px;
     }
 
     .header-text{
       font-size: 32px;
+      margin: auto 0;
       text-transform: uppercase;
-      font-family: 'Itim', cursive;
-      // font-family: 'Catamaran', sans-serif;
+      font-family: 'Catamaran', sans-serif;
     }
 
     .menu-bars-container{
-      grid-column: 1 / 12;
-      margin: 0 auto;
+      margin:  0;
     }
 
     .menu-bars{
-      width: 40px;
-      height: 40px;
-      background-color: rgb(18, 146, 220);
+      width: 50px;
+      height: 50px;
+      background-color: #0accff;
       display: flex;
       flex-direction: column;
-      height: 100%;
       justify-content: center;
       align-items: center;
     }
 
     .bars{
-      width: 25px;
-      height: 2.5px;
+      width: 28px;
+      height: 3px;
       background-color: white;
-      margin: 3px 0;
+      margin: 4px 0;
     }
 
     nav{
-      grid-column: 1 / 12;
-      
+      display: flex; 
+      margin-top: 10px;
+    }
+
+    nav > ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+    }
+
+    nav ul li{
+      list-style: none;
+      margin: 7px 0;
+    }
+
+    nav ul li .nav-item{
+      font-size: 18px;
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-family: 'Catamaran', sans-serif;
+    }
+
+    nav ul li .nav-item.active{
+      color: #ffb900;;
+    }
+
+  }
+
+  @media screen and (max-width: 360px){
+    .scissor{
+      height: 30px;
+      width: 30px;
+    }
+
+    .header-text{
+      font-size: 22px;
+      font-family: 'Catamaran', sans-serif;
     }
   }
   

@@ -21,12 +21,11 @@ const Navbar = () => {
         </div>
         <nav>
           <ul>
-            <Link to='' className="nav-item">Home</Link>
-            <Link to='' className="nav-item">About</Link>
-            <Link to='' className="nav-item">Services</Link>
-            <Link to='' className="nav-item">Portfolio</Link>
-            <Link to='' className="nav-item">Contact</Link>
-            <p className="nav-item phone">08162845828</p>
+            <li><Link to='' className="nav-item">Home</Link></li>
+            <li><Link to='' className="nav-item">About</Link></li>
+            <li><Link to='' className="nav-item">Services</Link></li>
+            <li><Link to='' className="nav-item">Portfolio</Link></li>
+            <li><Link to='' className="nav-item">Contact</Link></li>
           </ul>
         </nav>
       </header>
