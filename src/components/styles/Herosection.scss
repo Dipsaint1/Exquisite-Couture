@@ -5,7 +5,20 @@
   
 
   @media screen and (max-width: 720px){
-    .left > h1{
+    .container{
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      width: 100%;
+    }
+
+    .left, .right{
+      grid-column: span 12;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .container > .left > h1{
       color: rgb(163, 163, 163);
       font-size: 2em;
       font-weight: 300;
@@ -13,10 +26,10 @@
       text-align: center;
       margin: 10px auto;
       line-height: 1.5em;
-      font-family: 'Work Sans', sans-serif;
+      // font-family: 'Work Sans', sans-serif;
     }
 
-    .left > h2{
+    .container > .left > h2{
       font-size: 1.712em;
       color: #262c38;
       letter-spacing: 1px;
@@ -24,10 +37,10 @@
       font-weight:600;
       text-align: center;
       margin: 1em auto;
-      font-family: 'Work Sans', sans-serif;
+      // font-family: 'Work Sans', sans-serif;
     }
 
-    .left > h2:after{
+    .container > .left > h2:after{
       border-top: 3px solid #eb5424;
       display: block;
       width: 100px;
@@ -35,29 +48,29 @@
       margin: 5px auto 0;
     }
 
-    .left > h2 > span{
+    .container > .left > h2 > span{
       color:#00acee;
-      font-family: 'Work Sans', sans-serif;
+      // font-family: 'Work Sans', sans-serif;
     }
 
-    .left > h4{
+    .container > .left > h4{
       text-align: left;
-      margin: 1.5em 0 0 0;
+      margin: 0.5em 0 0 0;
       line-height: 30px;
       text-transform: capitalize;
       font-size: 1.3em;
       color: #303030;
-      font-family: 'Work Sans', sans-serif;
+      // font-family: 'Work Sans', sans-serif;
       font-weight: 500;
     }
 
-    .left > p{
-      font-size: 15.5px;
+    .container > .left > p{
+      font-size: 15px;
       line-height: 2em;
       margin-top: 1em;
       color: #717171;
       letter-spacing: 1px;
-      font-family: 'Work Sans', sans-serif;
+      font-weight: 400;
     }
 
     .service-info-container{
@@ -70,7 +83,7 @@
       padding: 0.8em 1em;
       background: #ffb900;
       border: 1px solid #ffb900;
-      border-radius: 5px;
+      border-radius: 0px;
       margin: 0 auto;
       text-decoration: none;
       color: #fff; 
@@ -78,7 +91,7 @@
       &:hover{
         border:1px solid #00acee;
         background:#00acee;
-        transition: 2s ease;
+        transition: 1.5s ease;
       }
     }
     .service-info-container > .service-info-link > button{
@@ -87,12 +100,40 @@
       background: none;
       letter-spacing: 1px;
       font-size: 1em;
+      cursor: pointer;
 
       & > .icon{
         font-size: 0.7em;
       }
     }
-  } 
+
+    .right{
+      margin-top: 20px;
+      position: relative;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+
+    .hero-img{
+      width: 100%;
+      height: auto;
+    }
+
+    .hero-img-1{
+      grid-column: 1 / span 10;
+      grid-row: 1;
+    }
+
+    .hero-img-2{
+      grid-column: 5 / -1;
+      grid-row: 1;
+      margin-top: 20%;
+      z-index: 1;
+    }
+  }
+
+
 }
 
 
