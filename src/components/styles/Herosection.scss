@@ -1,121 +1,98 @@
 #main{
   position: relative;
-  margin: 20px 0;
-
+  margin: 20px auto;
+  width: 90%;
+  
 
   @media screen and (max-width: 720px){
-    h1{
+    .left > h1{
       color: rgb(163, 163, 163);
-      width: 90%;
       font-size: 2em;
-      font-weight: 100;
+      font-weight: 300;
       letter-spacing: 2px;
       text-align: center;
       margin: 10px auto;
       line-height: 1.5em;
       font-family: 'Work Sans', sans-serif;
     }
+
+    .left > h2{
+      font-size: 1.712em;
+      color: #262c38;
+      letter-spacing: 1px;
+      position: relative;
+      font-weight:600;
+      text-align: center;
+      margin: 1em auto;
+      font-family: 'Work Sans', sans-serif;
+    }
+
+    .left > h2:after{
+      border-top: 3px solid #eb5424;
+      display: block;
+      width: 100px;
+      content: "";
+      margin: 5px auto 0;
+    }
+
+    .left > h2 > span{
+      color:#00acee;
+      font-family: 'Work Sans', sans-serif;
+    }
+
+    .left > h4{
+      text-align: left;
+      margin: 1.5em 0 0 0;
+      line-height: 30px;
+      text-transform: capitalize;
+      font-size: 1.3em;
+      color: #303030;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 500;
+    }
+
+    .left > p{
+      font-size: 15.5px;
+      line-height: 2em;
+      margin-top: 1em;
+      color: #717171;
+      letter-spacing: 1px;
+      font-family: 'Work Sans', sans-serif;
+    }
+
+    .service-info-container{
+      margin: 20px 0 10px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .service-info-container > .service-info-link{
+      padding: 0.8em 1em;
+      background: #ffb900;
+      border: 1px solid #ffb900;
+      border-radius: 5px;
+      margin: 0 auto;
+      text-decoration: none;
+      color: #fff; 
+
+      &:hover{
+        border:1px solid #00acee;
+        background:#00acee;
+        transition: 2s ease;
+      }
+    }
+    .service-info-container > .service-info-link > button{
+      border: none;
+      color: #fff; 
+      background: none;
+      letter-spacing: 1px;
+      font-size: 1em;
+
+      & > .icon{
+        font-size: 0.7em;
+      }
+    }
   } 
 }
 
-
-// .hero-section{
-//   /* background-image: linear-gradient(to left top, #deb779, #ae8060, #765147, #3c2a2a, #000000); */
-//   position: relative;
-//   background: #121218;
-// }
-
-// .hero-container{
-//   display: flex;
-//   flex-direction: column;
-//   height: 100%;
-//   align-items: center;
-//   justify-content: center;
-//   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-// }
-
-// .hero-header{
-//   position: absolute;
-//   top: 30%;
-//   left: 0;
-//   margin-left: 4%;
-//   font-family: 'Playfair Display', serif;
-//   font-weight: 500;
-//   color: #fff;
-//   font-size: 3.5rem;
-// }
-
-// .hero-header > span{
-//   margin-left: 20px;
-// }
-
-// .hero-text-container{
-//   position: absolute;
-//   top: 35%;
-//   display: flex;
-//   flex-direction: column;
-//   width: 35%;
-//   right: 0;
-//   margin-right: 3.5%;
-// }
-
-// .hero-text{
-//   width: 100%;
-//   font-weight: 600;
-//   letter-spacing: 0.04em;
-//   font-size: 1.2rem;
-//   color: #fff;
-//   font-family: 'poppins', serif;
-//   margin-bottom: 5px;
-// }
-
-// .hero-text-btn > .btn{
-//   background-color: #121218;
-//   color: #fff;
-//   outline: none;
-//   border-radius: 6px;
-//   font-size: 1rem;
-//   font-weight: 600;
-//   font-family: 'poppins', serif;
-// }
-
-// .hero-footer{
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   background: #121218;
-//   padding: 10px 4%;
-// }
-
-// .hero-footer > a{
-//   color: #deb779;
-//   text-decoration: none;
-//   font-size: 1rem;
-//   font-weight: light;
-//   margin: 0 8px;
-// }
-
-// @media screen and (max-width: 991px){
-//   .hero-header{
-//     font-size: 3rem;
-//   }
-//   .hero-text{
-//     font-size: 0.9rem;
-//   }
-//   .hero-footer{
-//     display: none;
-//   }
-// }
-
-// @media screen and (max-width: 768px){
-//   .hero-header{
-//     font-size: 2.7rem;
-//   }
-// }
-
-// @media screen and (max-width: 540px){
-//   .hero-information, .hero-footer{
-//     display: none;
-//   }
-// }
 
