@@ -8,7 +8,7 @@
     .slide-wrapper{
       display: flex;
       flex-direction: row !important;
-      min-height: 400px;
+      min-height: 300px;
       min-width: 400vw !important;
     }
   
@@ -85,7 +85,7 @@
     }
   }
   @media screen and (max-width: 360px){
-    .slide-wrapper{ min-height: 300px } 
+    .slide-wrapper{ min-height: 350px } 
     .slide h2{ font-size: 1.6em; font-weight: 600; letter-spacing: 1px }
     .slide p{ letter-spacing: 6px; font-size: 1.14em }  
     .circle{ width: 17px; height: 17px }
