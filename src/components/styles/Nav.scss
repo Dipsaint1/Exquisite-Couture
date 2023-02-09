@@ -7,7 +7,7 @@
   
   @media screen and (max-width: 720px){
     color: white;
-    min-height: 5vh;
+    min-height: 8vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +19,7 @@
     }
 
     .scissor{
-      margin-right: 20px;
+      margin-right: 10px;
       height:  40px;
       width: 40px;
     }
@@ -48,9 +48,9 @@
 
     .bar{
       width: 25px;
-      height: 2px;
+      height: 3px;
       background-color: white;
-      margin: 4px 0;
+      margin: 3px 0;
     }
 
     nav{
@@ -101,11 +101,18 @@
     }
 
   }
-
   @media screen and (max-width: 360px){
-    
-  }
-  
+    padding: 20px;
 
+    .scissor{ height:  35px; width: 35px }
+
+    .header-text{ font-size: 20px }
+
+    .menu-bars{ width: 35px; height: 30px }
+
+    nav ul li{ margin: 5px 0 }
+
+    nav ul li .nav-item{ font-size: 15px }
+  }
   
 }
