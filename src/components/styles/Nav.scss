@@ -25,10 +25,18 @@
     }
 
     .header-text{
-      font-size: 26px;
-      margin: auto 0;
+      font-size: 28px;
+      margin: auto auto;
       text-transform: uppercase;
-      font-family: 'Work Sans', sans-serif;
+      font-family: 'Kanit', sans-serif;
+      color: #0accff;
+      font-weight: 600;
+      letter-spacing: 1px;
+
+
+      & > span{
+        color: #0accff;
+      }
     }
 
     .menu-bars-container{
@@ -39,7 +47,6 @@
     .menu-bars{
       width: 45px;
       height: 35px;
-      background-color: #0accff;
       display: flex;
       flex-direction: column;
       justify-content: center;

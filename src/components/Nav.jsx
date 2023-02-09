@@ -15,7 +15,7 @@ const Navbar = () => {
       <header id="header">
         <div className="logo-container">
           <img className='scissor' src={Scissor} alt="scissor" />
-          <h4 className='header-text'>Exquisite Couture</h4>
+          <h4 className='header-text'>Exquisite <span>Couture</span></h4>
           <div className="menu-bars-container">
           <div onClick={ToggleMenu} className="menu-bars">
             <span className={toggleMenu === false ? 'bar' : 'bar top-bar'}></span>
