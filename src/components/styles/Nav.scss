@@ -108,18 +108,23 @@
     }
 
   }
-  @media screen and (max-width: 360px){
+
+  @media screen and (max-width: 480px){
     padding: 20px;
 
     .scissor{ height:  35px; width: 35px }
 
-    .header-text{ font-size: 20px }
+    .header-text{ font-size: 24px }
 
     .menu-bars{ width: 35px; height: 30px }
 
     nav ul li{ margin: 5px 0 }
 
     nav ul li .nav-item{ font-size: 15px }
+  }
+
+  @media screen and (max-width: 360px){
+    .header-text{ font-size: 20px }
   }
   
 }
