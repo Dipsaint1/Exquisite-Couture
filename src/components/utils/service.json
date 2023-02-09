@@ -1,0 +1,38 @@
+[
+  {
+    "header": "Natural Materials",
+    "icon": "faFemale",
+    "text": "Lorem sed nisi leo. Ut at sagittis nisi. Cras porttitor a purus ac rutrum.",
+    "id": 0
+  },
+  {
+    "header": "Craftsmanship",
+    "icon": "faBolt",
+    "text": "Lorem sed nisi leo. Ut at sagittis nisi. Cras porttitor a purus ac rutrum.",
+    "id": 1
+  },
+  {
+    "header": "Unique Design",
+    "icon": "faThumbsUp",
+    "text": "Lorem sed nisi leo. Ut at sagittis nisi. Cras porttitor a purus ac rutrum.",
+    "id": 2
+  },
+  {
+    "header": "Alterations",
+    "icon": "faScissors",
+    "text": "Lorem sed nisi leo. Ut at sagittis nisi. Cras porttitor a purus ac rutrum.",
+    "id": 3
+  },
+  {
+    "header": "Repairs",
+    "icon": "faFireExtinguisher",
+    "text": "Lorem sed nisi leo. Ut at sagittis nisi. Cras porttitor a purus ac rutrum.",
+    "id": 4
+  },
+  {
+    "header": "Bridal",
+    "icon": "faThumbTack",
+    "text": "Lorem sed nisi leo. Ut at sagittis nisi. Cras porttitor a purus ac rutrum.",
+    "id": 5
+  }
+]
