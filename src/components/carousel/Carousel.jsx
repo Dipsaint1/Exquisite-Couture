@@ -17,7 +17,6 @@ const Carousel = () => {
     return () => { clearInterval(slideInterval) }
   }, [currentSlide])
   
-
   const nextSlide = () => { 
     if( currentSlide === 3 ) setCurrentSlide(3);
     else setCurrentSlide( curr => curr + 1 );
@@ -60,25 +59,8 @@ const Carousel = () => {
         <span onClick={() => setCurrentSlide(2)} className={currentSlide===2 ? 'circle active-circle' : 'circle'}></span>
         <span onClick={() => setCurrentSlide(3)} className={currentSlide===3 ? 'circle active-circle' : 'circle'}></span>
       </div>
-    </main>
-    
+    </main> 
   )
-  
-  // return (
-  //   <div className="slider">
-  //     {slides.map((slide, index) => {
-  //       return(
-  //         <div
-  //           style={{transform: `translateX(${- currentSlide * 100}%)`, transition: "all ease 0.45s"}}
-  //           key={index} className="slide">
-  //           <div className="slide-item">
-  //             <img src={slide} alt="slide" />
-  //           </div>
-  //         </div>
-  //       )
-  //     })}
-  //   </div>
-  // );
 }
 
 export default Carousel;

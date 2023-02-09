@@ -2,9 +2,9 @@
   position: relative;
   margin: 20px auto;
   width: 90%;
-  
 
   @media screen and (max-width: 720px){
+    
     .container{
       display: grid;
       grid-template-columns: repeat(12, 1fr);
@@ -44,7 +44,7 @@
       border-top: 3px solid #eb5424;
       display: block;
       width: 100px;
-      content: "";
+      content: '';
       margin: 5px auto 0;
     }
 
@@ -60,8 +60,7 @@
       text-transform: capitalize;
       font-size: 1.3em;
       color: #303030;
-      // font-family: 'Work Sans', sans-serif;
-      font-weight: 500;
+      font-weight: 400;
     }
 
     .container > .left > p{
@@ -134,135 +133,12 @@
   }
 
   @media screen and (max-width: 360px){
-    .container{
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      width: 100%;
-    }
-
-    .left, .right{
-      grid-column: span 12;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-
-    .container > .left > h1{
-      color: rgb(163, 163, 163);
-      font-size: 2em;
-      font-weight: 300;
-      letter-spacing: 2px;
-      text-align: center;
-      margin: 10px auto;
-      line-height: 1.5em;
-      // font-family: 'Work Sans', sans-serif;
-    }
-
-    .container > .left > h2{
-      font-size: 1.712em;
-      color: #262c38;
-      letter-spacing: 1px;
-      position: relative;
-      font-weight:600;
-      text-align: center;
-      margin: 1em auto;
-      // font-family: 'Work Sans', sans-serif;
-    }
-
-    .container > .left > h2:after{
-      border-top: 3px solid #eb5424;
-      display: block;
-      width: 100px;
-      content: "";
-      margin: 5px auto 0;
-    }
-
-    .container > .left > h2 > span{
-      color:#00acee;
-      // font-family: 'Work Sans', sans-serif;
-    }
-
-    .container > .left > h4{
-      text-align: left;
-      margin: 0.5em 0 0 0;
-      line-height: 30px;
-      text-transform: capitalize;
-      font-size: 1.3em;
-      color: #303030;
-      // font-family: 'Work Sans', sans-serif;
-      font-weight: 500;
-    }
-
-    .container > .left > p{
-      font-size: 15px;
-      line-height: 2em;
-      margin-top: 1em;
-      color: #717171;
-      letter-spacing: 1px;
-      font-weight: 400;
-    }
-
-    .service-info-container{
-      margin: 20px 0 10px 0;
-      display: flex;
-      justify-content: center;
-    }
-
-    .service-info-container > .service-info-link{
-      padding: 0.8em 1em;
-      background: #ffb900;
-      border: 1px solid #ffb900;
-      border-radius: 0px;
-      margin: 0 auto;
-      text-decoration: none;
-      color: #fff; 
-
-      &:hover{
-        border:1px solid #00acee;
-        background:#00acee;
-        transition: 1.5s ease;
-      }
-    }
-    .service-info-container > .service-info-link > button{
-      border: none;
-      color: #fff; 
-      background: none;
-      letter-spacing: 1px;
-      font-size: 1em;
-      cursor: pointer;
-
-      & > .icon{
-        font-size: 0.7em;
-      }
-    }
-
-    .right{
-      margin-top: 20px;
-      position: relative;
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-    }
-
-    .hero-img{
-      width: 100%;
-      height: auto;
-    }
-
-    .hero-img-1{
-      grid-column: 1 / span 10;
-      grid-row: 1;
-    }
-
-    .hero-img-2{
-      grid-column: 5 / -1;
-      grid-row: 1;
-      margin-top: 20%;
-      z-index: 1;
-    }
+    .container > .left > h1{ font-size: 1.55em }
+    .container > .left > h2{ font-size: 1.23em }
+    .container > .left > h2:after{ border-top: 1.8px solid #eb5424; width: 70px }
+    .container > .left > h4{ font-size: 1.16em }
+    .container > .left > p{ font-size: 14.5px }
   }
-
-
 }
 
 
