@@ -100,20 +100,18 @@
       color: '#fff';
     }
   }
-
   @media screen and (max-width: 360px){
+    padding: 20px;
+
     .title{
-      text-align: center;
+      font-size: 1.7em;
+      &::after{ border-top: 2px solid #eb5424 }
+      & > span{ color: #00acee }
     }
 
-    main{
-      // display: flex;
-      // flex-direction: column;
-    }
-
-    .icon{
-      color: white;
-      font-size: 16px;
-    }
+    .content-wrapper > h5{ font-size: 1.1em }
+    .content-wrapper > p{ font-size: 14px }
+    .icon-wrapper{ border: solid #fff 1px }
   }
+
 }
