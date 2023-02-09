@@ -9,6 +9,11 @@
 
     .title{
       text-align: center;
+      color: #fff;
+
+      & > span{
+        color: #00acee;
+      }
     }
 
     main{
@@ -40,7 +45,6 @@
 
     .content-wrapper > h5{
       color: #ffb900;
-      opacity: 1;
       font-size: 1.2em;
       letter-spacing: 1px;
       margin: 1.8em 0 1.8em 0;
@@ -77,15 +81,7 @@
       border: solid #fff 2px;
     }
 
-
-    // .icon {
-    //   * {
-    //     color: red;
-    //   }
-    // }
-
     .icon{
-      color: yellow !important;
       width: 30px;
       height: 30px;
     }
